@@ -15,7 +15,6 @@ import lombok.*;
 public class Equipo {
 
     @Id
-    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

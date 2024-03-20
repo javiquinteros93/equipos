@@ -61,7 +61,7 @@ class EquipoServiceTest {
         List<Equipo> equipos = Arrays.asList(getBelgrano(), getDefensores());
         when(repository.findByNombreContaining("Belgrano")).thenReturn(equipos);
         List<Equipo> testResult = service.findEquipoByNombre("Belgrano");
-        Assertions.assertEquals(3, testResult.size());
+        Assertions.assertEquals(2, testResult.size());
         Assertions.assertEquals("Belgrano", testResult.get(0).getNombre());
     }
 
